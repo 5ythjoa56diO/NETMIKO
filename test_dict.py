@@ -11,15 +11,15 @@ device1 = {
 
 net_connect = ConnectHandler(**device1)
 print(net_connect.find_prompt())
-#output = net_connect.send_command("show ip int brief", expect_string=r'#')
-#print(output)
-command = 'delete flash:/test9.txt'
-#output = net_connect.send_command(command, expect_string=r'confirm',
+# output = net_connect.send_command("show ip int brief", expect_string=r'#')
+# print(output)
+# command = 'delete flash:/test9.txt'
+# output = net_connect.send_command(command, expect_string=r'confirm',
 #                        strip_prompt=False, strip_command=False)
-#output += net_connect.send_command('y', expect_string=r'#',
+# output += net_connect.send_command('y', expect_string=r'#',
 #                        strip_prompt=False, strip_command=False)
-output = net_connect.send_command_timing(command,
-    strip_prompt=False, strip_command=False)
-output += net_connect.send_command_timing('y',
-    strip_prompt=False, strip_command=False)
-print(output)
+# output = net_connect.send_command_timing(command,
+#    strip_prompt=False, strip_command=False)
+# output += net_connect.send_command_timing('y',
+#    strip_prompt=False, strip_command=False)
+# print(output)
